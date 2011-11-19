@@ -1,8 +1,9 @@
-Documentation for this example Sugar is available here:
+Espresso Sugar for the Go language
+==================================
 
-http://wiki.macrabbit.com/index/SugarStructure/
+This is an extension for the `Espresso`_ code editor that aims to provide language support for Google's `The Go Programming Language`_
 
-This is a great place to start for your own Sugar;
-just make sure to modify the properties in Info.plist.
+At the moment it is just a shell of a 
 
-You can delete this README for your actual Sugar.
+.. Espresso: http://www.macrabbit.com/espresso/
+.. The Go Programming Language: http://golang.org/
