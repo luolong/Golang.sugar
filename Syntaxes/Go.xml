@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<syntax name="language-root.go">
+<!--
+  This syntax file adheres to the Espresso Sugar Standard naming convention described by elliotcable.
+  See https://github.com/elliottcable/espresso-sugar-standard/ for more details
+  -->
+    <zones>
+        <!-- ==========================  -->
+        <!-- Comments                    -->
+        <!-- ==========================  -->
+        
+        <!-- Line comments start with the character sequence // and stop at the end of 
+             the line. A line comment acts like a newline.
+          -->
+        <zone name="metadata.comment.line">
+            <expression>(//).*$</expression>
+            <capture number="1" name="punctuation.definition.begin"/>
+        </zone>
+        
+        <!-- General comments start with the character sequence /* and continue through
+             the character sequence */. A general comment that spans multiple lines acts
+             like a newline, otherwise it acts like a space.
+          -->
+        <zone name="metadata.comment.block">
+            <starts-with>
+                <expression>/\*</expression>
+                <capture number="0" name="punctuation.definition.begin"/>
+            </starts-with>
+            <ends-with>
+                <expression>\*/</expression>
+                <capture number="0" name="punctuation.definition.end"/>
+            </ends-with>
+        </zone>
+            
+    <!-- The (optional) <library> tag contains collections of reusable zones -->
+    <library>
+        <!-- <collection> elements go here -->
+    </library>
+    
+</syntax> 
