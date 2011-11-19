@@ -3,7 +3,31 @@ Espresso Sugar for the Go language
 
 This is an extension for the `Espresso`_ code editor that aims to provide language support for Google's `The Go Programming Language`_
 
-At the moment it is just a shell of a 
+At the moment it is just a shell of a Sugar with hardly anything useful in it besides the definition of a language, but the very first goal of this sugar would be to implement syntax highlighting, and hopefully a host of other useful stuff like code templates, outlining and others coming next.
 
 .. Espresso: http://www.macrabbit.com/espresso/
 .. The Go Programming Language: http://golang.org/
+
+
+
+Finished features
+-----------------
+
+Nothing, really.
+
+
+
+Work in progress
+----------------
+
+- Basic Go Syntax highlighting
+
+
+
+Stuff to do
+-----------
+
+- Code outline
+- Basic code templates
+- Autocompletion
+- etc...
